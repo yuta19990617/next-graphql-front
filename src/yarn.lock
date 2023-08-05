@@ -881,6 +881,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fullcalendar/core@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/core@npm:6.1.8"
+  dependencies:
+    preact: ~10.12.1
+  checksum: 66c13078c95573c4dc1c767c2a855c8f77608d1c0cee07eac4923fa1d967a64557640079b45e3da43a68cb8942873dd06523716544f25d98efa3641c0754045f
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/daygrid@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/daygrid@npm:6.1.8"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.8
+  checksum: a99441c81d8b2054cb03945a2cd4907ef569c759b68238d953d86fc96f739c75305219de182a61d82c77d54893041657bb4bc3f8a5a0779e57e294a614ae9677
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/interaction@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/interaction@npm:6.1.8"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.8
+  checksum: 3ef0da6dca8aec2b8c3b2eb88594930a14d7111e2ed78890da328740d5c806b2314fd986046827deb6bc5c872aacd2d4edb5c52cda61d9d1f41422bba63254cf
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/react@npm:^6.1.8":
+  version: 6.1.8
+  resolution: "@fullcalendar/react@npm:6.1.8"
+  peerDependencies:
+    "@fullcalendar/core": ~6.1.8
+    react: ^16.7.0 || ^17 || ^18
+    react-dom: ^16.7.0 || ^17 || ^18
+  checksum: 8381ea73df16f84c8e69c97083aa99620daf3c7af6ccba47a0e0447ee4dd648163a9447360893e53ede65e017cf84f88f7b1a3c2cbb083cd7f9c54dfef1edf1e
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -4369,6 +4407,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"enhanced-resolve@npm:^5.10.0":
+  version: 5.15.0
+  resolution: "enhanced-resolve@npm:5.15.0"
+  dependencies:
+    graceful-fs: ^4.2.4
+    tapable: ^2.2.0
+  checksum: fbd8cdc9263be71cc737aa8a7d6c57b43d6aa38f6cc75dde6fcd3598a130cc465f979d2f4d01bb3bf475acb43817749c79f8eef9be048683602ca91ab52e4f11
+  languageName: node
+  linkType: hard
+
 "enhanced-resolve@npm:^5.12.0":
   version: 5.13.0
   resolution: "enhanced-resolve@npm:5.13.0"
@@ -7498,6 +7546,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-transpile-modules@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "next-transpile-modules@npm:10.0.1"
+  dependencies:
+    enhanced-resolve: ^5.10.0
+  checksum: 6cfffd165769a04b153e60f49f4f3896d16aa688304616f66c7b94299e2229b04db368217e6a7300d3110fe988a6c6e68025bb2cbda3edf49e9b29109ff671bd
+  languageName: node
+  linkType: hard
+
 "next@npm:13.2.3":
   version: 13.2.3
   resolution: "next@npm:13.2.3"
@@ -8130,6 +8187,13 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
+  languageName: node
+  linkType: hard
+
+"preact@npm:~10.12.1":
+  version: 10.12.1
+  resolution: "preact@npm:10.12.1"
+  checksum: 0de99f477563ab7f94a0f964952ad216375973c0dcd9eb49881f8eb5effc5ed6948da062548c87d5bb0d82f1a1e516b649020e760eab3a0503dfdd8e64d34a26
   languageName: node
   linkType: hard
 
@@ -8959,6 +9023,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "src@workspace:."
   dependencies:
+    "@fullcalendar/core": ^6.1.8
+    "@fullcalendar/daygrid": ^6.1.8
+    "@fullcalendar/interaction": ^6.1.8
+    "@fullcalendar/react": ^6.1.8
     "@graphql-codegen/cli": ^3.2.2
     "@graphql-codegen/client-preset": ^2.1.1
     "@graphql-typed-document-node/core": ^3.2.0
@@ -8984,6 +9052,7 @@ __metadata:
     jest-environment-jsdom: ^29.5.0
     msw: ^1.2.1
     next: 13.2.3
+    next-transpile-modules: ^10.0.1
     prettier: ^2.8.4
     react: 18.2.0
     react-cookie: ^4.1.1
